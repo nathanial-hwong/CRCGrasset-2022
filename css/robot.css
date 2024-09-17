@@ -1,0 +1,105 @@
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+hr {
+  margin: 0;
+}
+
+.robot {
+  display: block;
+}
+
+.robot-img {
+  display: flex;
+}
+
+.robot-img img {
+  height: 75vw;
+  margin: 20px auto;
+  margin-top: 0;
+}
+
+.description {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 75%);
+  border-radius: 10px;
+  margin: auto 30px;
+  overflow-y: scroll;
+}
+
+.description > * {
+  margin: 0 20px;
+  padding: 1rem 0;
+}
+
+.systems {
+  margin: 20px 0;
+}
+.systems div {
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 75%);
+  transition: height 550ms ease-out;
+  height: 65px;
+  overflow: hidden;
+}
+
+.systems div > h2 {
+  font-size: 22.2px;
+}
+
+.systems div > * {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.systems div:hover {
+  transition: height 300ms ease-out;
+  height: 300px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .robot-img img {
+    height: 60vh;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .robot {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .robot-img img {
+    height: 40vw;
+    margin-top: 20px;
+  }
+  .robot > * {
+    margin: 0 50px;
+  }
+  .description {
+    height: 40vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  hr {
+    opacity: 0;
+  }
+  .robot {
+    display: flex;
+  }
+  .robot-img img {
+    height: 60vh;
+  }
+  .description {
+    height: auto;
+  }
+  .systems div {
+    margin: 10px 50px;
+    border-radius: 10px;
+  }
+}

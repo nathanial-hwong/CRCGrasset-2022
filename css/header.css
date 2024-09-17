@@ -1,0 +1,117 @@
+body {
+  background-image: url("/CRCGrasset/website_background_v2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: -75px 0px;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav {
+  background: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 3px solid #333;
+  align-items: center;
+}
+
+.logo {
+  width: 10vw;
+  padding: 5px;
+  position: relative;
+  left: 10px;
+}
+
+.arcanum__logo1 {
+  height: 8vw;
+}
+
+.nav__toggler {
+  color: #c3c7c7;
+  margin: 7px;
+  transition: transform 750ms ease-out, color 500ms;
+  position: relative;
+  right: 10px;
+}
+
+.collapsible__content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.nav__toggler:hover {
+  color: rgba(251, 251, 251, 25%);
+}
+
+.nav.collapsible--expanded .nav__toggler {
+  transform: rotate(405deg);
+  transition: transform 750ms ease-out, color 500ms;
+}
+
+.collapsible--expanded .collapsible__content {
+  display: block;
+}
+
+.nav_item {
+  font-size: 3vh;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 2rem;
+  border-top: 1px solid #333;
+}
+.nav_item > a {
+  color: #d2d0db;
+  text-decoration: none;
+}
+.nav_item > a:hover {
+  color: #fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 50%);
+  border-radius: 5px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  body {
+    background-position: 0px 0px;
+  }
+  .logo {
+    padding: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .logo {
+    width: 60px;
+  }
+  .arcanum__logo1 {
+    display: block;
+    height: 3rem;
+  }
+  .nav__toggler {
+    font-size: 72.8px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    width: 80px;
+  }
+  .arcanum__logo1 {
+    height: 4rem;
+  }
+}

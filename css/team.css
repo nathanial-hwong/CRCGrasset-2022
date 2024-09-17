@@ -1,0 +1,99 @@
+.parent-equipe {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-gap: 10%;
+  justify-content: center;
+  align-content: center;
+  height: 150vh;
+}
+
+div2 {
+  border: 5px solid #edd952;
+  border-radius: 25px;
+  background-color: #0a205a;
+  height: 330px;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+h1 {
+  width: 500px;
+}
+
+h2 {
+  background-color: #0a205a;
+  border: 5px solid #edd952;
+  border-radius: 25px;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  top: -50px;
+  padding-top: 15px;
+}
+
+.profile {
+  max-width: 150%;
+  max-height: 300px;
+  position: relative;
+  top: -80px;
+}
+
+.membre {
+  width: 30%;
+  float: left;
+}
+
+body {
+  background-image: url(https://cdn.discordapp.com/attachments/750260048407560283/955624102591348776/website_background_v2.png);
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+h3 {
+  position: relative;
+  top: -70px;
+  padding-left: 10px;
+}
+p {
+  position: relative;
+  top: -70px;
+  padding-left: 10px;
+  height: 50%;
+}
+
+div1 {
+  float: left;
+  padding-bottom: -20px;
+}
+.siteweb {
+  grid-column: 1/2;
+}
+.siteweb div1 {
+  width: 30%;
+}
+
+.robot {
+  grid-column: 2/3;
+}
+.robot div1 {
+  width: 30%;
+  padding-left: 60px;
+}
+.video {
+  grid-column: 1/3;
+  grid-row: 2/2;
+}
+.video div1 {
+  width: 15%;
+  padding-left: 50px;
+}
+.kiosque {
+  grid-column: 1/2;
+  grid-row: 3/3;
+}
+.kiosque div1 {
+  width: 30%;
+}

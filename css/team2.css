@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  text-align: center;
+}
+
+.website {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.teams > div {
+  background-color: black;
+  width: 50%;
+}
+
+.profile-img > img {
+  width: 200px;
+}
+
+h3 {
+  display: block;
+}
